@@ -6,19 +6,27 @@ MSCW Buff Tracker recognizes buff icons from the visible game screen and alerts 
 
 ## **⚠️DO NOT BLOCK OR COVER THE BUFF ICONS IN THE TOP-RIGHT CORNER OF THE GAME SCREEN.**
 
-## Download
+## Download the Windows app
 
-Get the Windows app from [GitHub Releases](https://github.com/Song-HyunSeok/MSCW-Buff-Tracker/releases).
+### [Download Windows App — v0.1.29](https://github.com/Song-HyunSeok/MSCW-Buff-Tracker/releases/download/v0.1.29/MSCWBuffTracker-v0.1.29-Windows-App.zip)
 
-Download the **windows-x64 ZIP**, extract the entire archive, and run **MSCWBuffTracker.exe** inside the extracted folder.
+**For players:** use the Windows App link above. You do not need Python or the source code.
 
-Keep the executable, `_internal`, `assets`, `skills.json`, `updates.json`, and the included license notices together. Do not run the app directly from inside the ZIP.
+1. Download **MSCWBuffTracker-v0.1.29-Windows-App.zip**.
+2. Right-click the ZIP and choose **Extract All**.
+3. Open the extracted **MSCWBuffTracker** folder and run **MSCWBuffTracker.exe**.
+
+Keep the executable, `_internal`, `assets`, `skills.json`, `updates.json`, and license notices together. Do not run the app from inside the ZIP.
+
+**For developers:** [download the complete source package](https://github.com/Song-HyunSeok/MSCW-Buff-Tracker/releases/download/v0.1.29/MSCWBuffTracker-v0.1.29-Source-Developers-Only.zip). It contains Python source and build files, not a ready-to-run Windows app. GitHub also displays automatic **Source code (zip)** and **Source code (tar.gz)** repository snapshots; these are not the Windows application. Use the complete source package to build this release.
+
+[View all releases](https://github.com/Song-HyunSeok/MSCW-Buff-Tracker/releases)
 
 ## Features
 
 - Automatically detects the MapleStory window.
 - Watches an **800 × 60 pixel area** at the top-right of the game client, following the window when it moves or resizes.
-- Tracks **21 distinct buff skills**, with individual notification toggles.
+- Tracks **20 buff entries**, with individual notification toggles.
 - Offers sound, popup, or combined notifications.
 - Includes five notification tones, plus **Female Voice** and **Male Voice**.
 - Provides a notification-volume slider with mute at 0%.
@@ -136,11 +144,15 @@ Keep existing skill IDs unchanged to preserve user selections. New skills need c
 
 ## Attribution and license
 
-**The project’s source-code license is pending.** No MIT or other project license has been selected.
+The original MSCW Buff Tracker project code is licensed under the **GNU General Public License version 3 only (GPL-3.0-only)**. See [LICENSE](LICENSE) for the full terms.
+
+You may use, modify, and redistribute the covered code, including commercially, under GPLv3. When distributing covered binaries or modified versions, provide the corresponding source code under GPLv3 and preserve the required notices. The software is provided without warranty.
+
+The complete corresponding application source for version 0.1.29, including build instructions, is provided in the **Source-Developers-Only.zip** release asset alongside the Windows package. This licensing/documentation update does not change application behavior.
 
 Dependency licenses are included in `licenses/`; see [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) for component and asset attribution. Those dependency licenses are separate from this project’s license.
 
-Skill artwork was supplied through reference material citing MeowDB / MapleStory Classic World and belongs to its respective owners. Voice recordings were generated locally using Microsoft Zira and Microsoft David; the female variant uses a higher pitch. This project does not claim ownership of those third-party assets.
+Skill artwork was supplied through reference material citing MeowDB / MapleStory Classic World and belongs to its respective owners. Voice recordings were generated locally using Microsoft Zira and Microsoft David; the female variant uses a higher pitch. This project does not claim ownership of those third-party assets or relicense them under GPLv3. Their respective rights and terms continue to apply.
 
 ## Feedback
 

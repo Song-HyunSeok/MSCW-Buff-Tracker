@@ -1,0 +1,19 @@
+MSCW Buff Tracker third-party components
+
+Libraries are dynamically loaded in the portable distribution. Dependency license notices follow in licenses/.
+
+PySide6-Essentials 6.12.0
+shiboken6 6.12.0
+numpy 2.5.4
+opencv-python-headless 5.0.0.93
+mss 10.2.0
+
+PySide6/Qt: LGPLv3/GPL/commercial licensing. See included notices. Qt and PySide libraries remain replaceable shared libraries. Sources: https://code.qt.io/ and https://download.qt.io/official_releases/QtForPython/
+OpenCV: https://opencv.org/
+NumPy: https://numpy.org/
+MSS: https://github.com/BoboTiG/python-mss
+
+Skill image references supplied by user in MSCW Buff Tracker.docx; document cites MeowDB / MapleStory Classic World. Game artwork belongs to its respective owners.
+Bundled voice recordings were generated locally with Microsoft Zira and Microsoft David Windows speech voices. The female variant uses higher pitch. Non-speech tone WAVs were synthesized for this project. No separate redistribution license for game artwork or Windows voice output is asserted by this archive.
+
+The original project code is licensed under GPL-3.0-only; see LICENSE. This does not relicense third-party libraries, game artwork, or Windows voice assets.
