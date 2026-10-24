@@ -8,7 +8,7 @@ MSCW Buff Tracker recognizes buff icons from the visible game screen and alerts 
 
 Get the Windows app from [GitHub Releases](https://github.com/Song-HyunSeok/MSCW-Buff-Tracker/releases).
 
-Download the **windows-x64 ZIP**, extract the entire archive, and run **MSCWBuffTracker.exe** inside the extracted folder. **You do not need to install Python** to use the Windows app.
+Download the **windows-x64 ZIP**, extract the entire archive, and run **MSCWBuffTracker.exe** inside the extracted folder.
 
 Keep the executable, `_internal`, `assets`, `skills.json`, `updates.json`, and the included license notices together. Do not run the app directly from inside the ZIP.
 
@@ -93,8 +93,6 @@ Spoken alerts work offline and use the same Volume setting as notification tones
 
 Detection runs locally on visible screen pixels. The application does not use a game API, read game memory, sniff packets, or automate game input. Normal tracking does not save screenshots. Update checks contact GitHub; captured game images are not sent with those requests.
 
-Buff disappearance is confirmed for **one second**, evaluated on valid scans. Actual notification timing can be longer because scanning takes time, especially with many skills selected.
-
 | Status | Meaning |
 | --- | --- |
 | Off | Notifications for this skill are disabled. |
@@ -110,14 +108,13 @@ Buff disappearance is confirmed for **one second**, evaluated on valid scans. Ac
 - Keep the buff row visible. A minimized game, an overlapping window, or unavailable capture can pause tracking.
 - The fixed capture area assumes a single buff row at the top-right. Wrapped rows, letterboxing, unusual UI scaling, or icons taller than the capture area may not work correctly.
 - Countdown text, shading, animations, and similar-looking icons can affect recognition. Recognition has been tested against supplied gameplay samples, but accuracy is not guaranteed across every class or display setup.
-- Bow and Crossbow Soul Arrow use identical supplied artwork. Enable only the one applicable to your character.
 - Pause tracking during loading screens or menus that hide the buffs to avoid false expiration alerts.
 - After a long capture interruption, a game-window change, or a resolution/DPI change, buffs must be recognized again. Brief interruptions preserve confirmed buffs for up to five seconds.
 - Exclusive fullscreen or capture restrictions may require switching to windowed or borderless mode.
 
 ## Updates and saved settings
 
-Updates are checked against this repository’s published, stable GitHub Releases. Version tags use the format `v0.1.28`. A repository without an accessible published release cannot offer an update yet.
+Updates are checked against this repository’s published, stable GitHub Releases. Version tags use the format `v0.1.1`. A repository without an accessible published release cannot offer an update yet.
 
 Update results, release notes, and the download button appear **inside Settings**, without an update popup. The app does not automatically download, install, or replace files.
 
@@ -127,30 +124,6 @@ To update, close the app, extract the newer Windows release, and run its executa
 %LOCALAPPDATA%\MSCWBuffTracker\settings.json
 ```
 
-## Run from source
-
-Development requires **64-bit Windows** and **Python 3.12**. From the repository folder, run:
-
-```powershell
-py -3.12 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe main.py
-```
-
-### Tests
-
-```powershell
-.\.venv\Scripts\python.exe -m unittest discover -v
-```
-
-Tests cover image matching, alert state transitions, capture handling, and update checks. The update transport test uses a local HTTP server and requires loopback networking.
-
-### Build the Windows app
-
-```powershell
-.\.venv\Scripts\python.exe -m pip install PyInstaller==6.22.3
-.\.venv\Scripts\python.exe build.py
-```
 
 The complete portable application is written to `dist/MSCWBuffTracker`. ZIP that entire folder for a Windows release. Generated files such as `preview.png` are not required for distribution.
 
