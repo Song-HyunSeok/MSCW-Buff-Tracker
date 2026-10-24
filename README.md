@@ -83,9 +83,8 @@ Spoken alerts work offline and use the same Volume setting as notification tones
 | Invincible | Cleric |
 | Focus | Bowman |
 | Bow Booster | Hunter |
-| Soul Arrow: Bow | Hunter |
 | Crossbow Booster | Crossbowman |
-| Soul Arrow: Crossbow | Crossbowman |
+| Soul Arrow | 2nd Job Bowman |
 | Claw Booster | Assassin |
 | Dagger Booster | Bandit |
 
