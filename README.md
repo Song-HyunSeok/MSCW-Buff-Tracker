@@ -4,6 +4,8 @@ A Windows desktop companion for MapleStory Classic World that notifies you when 
 
 MSCW Buff Tracker recognizes buff icons from the visible game screen and alerts you with a popup, a sound, or a spoken notification such as **“Haste buff ended.”**
 
+## **DO NOT BLOCK OR COVER THE BUFF ICONS IN THE TOP-RIGHT CORNER OF THE GAME SCREEN.**
+
 ## Download
 
 Get the Windows app from [GitHub Releases](https://github.com/Song-HyunSeok/MSCW-Buff-Tracker/releases).
